@@ -9,6 +9,10 @@ val scalaTestDependencies = Seq(
   "org.scalatest" %% "scalatest-flatspec" % "3.2.14" % Test
 )
 
+val parboiledDependencies = Seq(
+  "org.parboiled" %% "parboiled" % "2.4.0"
+)
+
 lazy val appHamlet = project.settings(
   scalaVersion := scalaVer,
   libraryDependencies ++= scalaTestDependencies
@@ -16,7 +20,7 @@ lazy val appHamlet = project.settings(
 
 lazy val appTodo = project.settings(
   scalaVersion := scalaVer,
-  libraryDependencies ++= scalaTestDependencies
+  libraryDependencies ++= scalaTestDependencies ++ parboiledDependencies
 )
 
 lazy val exercises = project.settings(
