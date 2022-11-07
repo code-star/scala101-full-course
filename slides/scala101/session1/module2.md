@@ -480,9 +480,14 @@ toScreen(hamlet)
 
 How would you implement classes `Author` and `Book`
 
+Open `exercises/src/main/scala/exercise2/Hamlet.scala` and add/update the code to make the program work as expected.
+
 Exercises available at https://github.com/code-star/scala101-full-course.git
 
 ==
+<!-- .slide: data-background-color="#002b00" -->
+<img src="/scala101/images/exercise.png" class="slideLabel"/>
+
 ## Exercise 2 - one possible solution
 
 ```scala

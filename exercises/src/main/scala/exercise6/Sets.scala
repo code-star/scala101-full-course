@@ -12,7 +12,6 @@ object Sets {
   def contains(s: Set, elem: Int): Boolean =
     s(elem)
 
-
   // Implement these yourself!
 
   def singletonSet(elem: Int): Set = ???

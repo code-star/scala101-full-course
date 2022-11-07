@@ -278,16 +278,25 @@ the def-based and val-based methods.
 * ...
 
 ==
-<!-- .slide: data-background-color="#002b00" class="fragmented-lists" -->
+<!-- .slide: data-background-color="#002b00" -->
 <img src="/scala101/images/exercise.png" class="slideLabel"/>
 
 ## Exercise 5: Pascal's Triangle
+
 * Implement the `pascal` function, which takes a column `c` and a row `r` (counting from 0)
 * The function returns the number at that spot in the triangle
 * For example
   * pascal(0, 2) = 1
   * pascal(1, 2) = 2
   * pascal(1, 3) = 3
+
+<div class="fragment" data-fragment-index="2">
+
+Open `exercises/src/main/scala/exercise5/Pascal.scala` and add/update the code to make the program work as expected.
+
+Exercises available at https://github.com/code-star/scala101-full-course.git
+
+</div>
 
 ==
 <!-- .slide: data-background-color="#002b00" class="fragmented-lists" -->
@@ -338,7 +347,6 @@ Note: In Math a characteristic function is a function that takes an element and 
 
 ## Exercise 6: Sets of integers
 
-<div class="fragment current-visible" data-markdown>
 
 ```scala
 val negative: Int => Boolean = 
@@ -347,11 +355,11 @@ val negative: Int => Boolean =
 val even: Int => Boolean = 
   (x: Int) => x % 2 == 0
 ```
-</div>
+
 <div class="fragment fade-in">
 
 ```scala
-type Set = Int => Boolean
+type Set = Int => Boolean 
 
 val negative: Set = 
   (x: Int) => x < 0
@@ -369,11 +377,21 @@ def contains(s: Set, elem: Int): Boolean = s(elem)
 </div>
 
 ==
-<!-- .slide: data-background-color="#002b00" class="fragmented-lists" -->
+<!-- .slide: data-background-color="#002b00" -->
 <img src="/scala101/images/exercise.png" class="slideLabel"/>
 
 ## Exercise 6: Sets of integers
-<div class="fragment" data-fragment-index="5" data-markdown>
+* We need more functions to work effectively with sets
+* Your task is to define them
+* Hint: return lambdas
+
+<div class="fragment" data-fragment-index="20">
+
+Open `exercises/src/main/scala/exercise6/Sets.scala` and add/update the code to make the program work as expected.
+
+Exercises available at https://github.com/code-star/scala101-full-course.git
+
+</div>
 
 ```scala
 def singletonSet(elem: Int): Set = ???    // set with only 1 element
@@ -387,11 +405,8 @@ def intersect(s: Set, t: Set): Set = ???  // set with elements that are in s and
 
 def diff(s: Set, t: Set): Set = ???       // set with elements from s that are not in t
 ```
-</div>
+<!-- .element: class="fragment" -->
 
-* We need more functions to work effectively with sets
-* Your task is to define them
-* Hint: return lambdas
 
 ==
 <!-- .slide: data-background-color="#002b00" class="fragmented-lists" -->

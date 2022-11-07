@@ -321,6 +321,13 @@ The words are sorted alphabetically, and show their position in the original str
 
 <span class="fragment" data-markdown>
 
+Open `exercises/src/main/scala/exercise3/Brevity.scala` and add/update the code to make the program work as expected.
+
+Exercises available at https://github.com/code-star/scala101-full-course.git
+</span>
+
+<span class="fragment" data-markdown>
+
 One possible solution:
 
 ```scala
@@ -332,7 +339,7 @@ phrase.split(" ").zipWithIndex.sorted.mkString("\n")
 <!-- .slide: data-background-color="#002b00" -->
 <img src="/scala101/images/exercise.png" class="slideLabel"/>
 
-## Excercise 4: todo.txt
+## Excercise 4: todo.txt (homework assignment)
 
 * The assignment: write some unit tests for todo.txt
   * Source code available in module `appTodo`
@@ -350,40 +357,13 @@ val task: Try[Task] = parser.task.run()
 * Try is like Option:
   * `if (task.isSuccess) println(task.get) else println(":(")`
 
-==
-<!-- .slide: data-background-color="#002b00" -->
-<img src="/scala101/images/exercise.png" class="slideLabel"/>
-
-## Excercise 4: todo.txt
-For example
-
-```scala
-import todo.TodoParser
-import org.scalatest.flatspec.AnyFlatSpec
-import org.scalatest.matchers.should.Matchers
-
-class TaskTest extends AnyFlatSpec with Matchers {
-  it should "parse a simple task" in {
-    val task = parse("(A) Call mom")
-    
-    task.isSuccess shouldBe true
-    task.get.priority shouldBe Some("A")
-    task.get.description shouldBe Some("Call mom")
-  }
-  
-  private def parse(input: String) = {
-    val parser = TodoParser(input)
-    parser.task.run()
-  }
-}
-
-```
+Exercises available at https://github.com/code-star/scala101-full-course.git
 
 ==
 <!-- .slide: data-background-color="#002b00" -->
 <img src="/scala101/images/exercise.png" class="slideLabel"/>
 
-## Excercise 4: todo.txt
+## Excercise 4: todo.txt (homework assignment)
 * Note
   * For a single task: `parser.task.run()`
   * For a list of tasks, separated by newlines: `parser.tasks.run()`

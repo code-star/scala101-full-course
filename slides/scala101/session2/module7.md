@@ -138,3 +138,11 @@ for (x <- 1 to m; y <- 1 to n) yield (x, y)
 
 ## Exercise 8: Shakespeare, part II
 Implement the functions marked `???` in `functions.scala`
+
+<div class="fragment" data-fragment-index="20">
+
+Open `appHamlet/src/main/scala/words/fuinctions.scala` and add/update the code to make the program work as expected.
+
+Exercises available at https://github.com/code-star/scala101-full-course.git
+
+</div>
