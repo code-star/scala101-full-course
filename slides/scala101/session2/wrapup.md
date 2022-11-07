@@ -13,6 +13,9 @@
 * Book: Functional Programming in Scala
   * https://www.manning.com/books/functional-programming-in-scala
 
+* Udemy training
+  * https://www.udemy.com/course/rock-the-jvm-scala-for-beginners/
+
 <img src="/scala101/images/underscoretraining.png" class="colRight" style="width:400px;"/>
 
 * Underscore.io - free eBooks
