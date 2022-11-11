@@ -110,7 +110,7 @@ notes: Ask audience what differences they spot<br/>
 val str = "hello"
 
 str.contains("e")   // normal function call
-s contains "e"      // infix notation of same call
+str contains "e"      // infix notation of same call
 
 ```
 
@@ -226,8 +226,8 @@ val todo = ???
 
 ## Extra
 * Open https://scala-lang.org/api/current
-* Find `RichInt.to`
+* Find `Int.to`
 * What parameters does it accept?
 * What does it return?
-* What about `RichInt.until`?
+* What about `Int.until`?
 

@@ -80,12 +80,15 @@ class Circle(val r: Double) {
 ## Methods
 ```scala
 class Circle(val r: Double) {
-  
+
   def draw(c: Canvas): Unit = {
-    val box = determineBoundingBox // draw using box
+    val box = determineBoundingBox 
+    
+    // draw on canvas c using box
 
     private def determineBoundingBox = new Rectangle(2 * r, 2 * r)
   }
+}
 ```
 
 notes: Unit in Scala is same as void in Java <br/>
