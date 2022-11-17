@@ -48,3 +48,9 @@ the `png` versions of all modified diagrams).
 Automatically generate .png results from changed .puml files:
 * install File Watcher plugin in IntelliJ
 * See https://www.jetbrains.com/help/idea/using-file-watchers.html#ws_file_watchers_bedore_you_start for background info
+
+## Slide handouts
+* open slides with `http://localhost:8000/?print-pdf`
+* print selected pages (omitting the exercise solutions)
+  * Session 1: 1-56,58-98
+  * Session 2: 100-102,104-125,127-130,132-157

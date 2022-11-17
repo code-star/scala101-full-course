@@ -21,7 +21,7 @@ for (i <- 1 to 10) println(i)
 (1 to 10) foreach { println(_) }
 
 // is equivalent to 
-1 to 3 foreach println
+1 to 10 foreach println
 ```
 
 ===

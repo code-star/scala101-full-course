@@ -84,7 +84,7 @@ lazy val pi = veryExpensiveComputation
 ```scala
 val discount = if (totalPrice > 100) totalPrice * 0.05 else 0.0
 
-val x: Unit = prinln("Hello world")
+val x: Unit = println("Hello world")
 println(x)
 
 // Hello world
