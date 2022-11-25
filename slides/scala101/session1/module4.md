@@ -14,7 +14,7 @@
 val xs = List(1, 2, 3)
 ```
 
-<img src="/scala101/images/list1.png" class="center">
+<img src="/scala101/images/list1.svg" class="center">
 
 ==
 <!-- .slide: class="fragmented-lists" -->
@@ -25,7 +25,7 @@ val xs = List(1, 2, 3)
 val ys = 0 :: xs
 ```
 
-<img src="/scala101/images/list2.png" class="center">
+<img src="/scala101/images/list2.svg" class="center">
 
 * Immutable collections can be implemented efficiently by re-using parts of existing collections
 * In a linked list, pre-pending simply re-uses the existing list, and the old pointer remains valid
