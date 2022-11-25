@@ -42,6 +42,7 @@ the `png` versions of all modified diagrams).
 2. Install the File Watchers plugin
 1. Add a File Watcher to watch the `slides` folder and process `puml` files in these folders:<br/>
    ![File Watcher](slides/images/addingFileWatcherForPlantuml.png)
+   2. use the arguments `-tsvg -nometadata $FileName$` if you want SVG instead of the default PNG
 1. Create a custom `scope` to limit the file watcher:<br/>
    ![Documentation Scope](slides/images/creatingScope.png)
 
